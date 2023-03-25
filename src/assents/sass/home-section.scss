@@ -1,0 +1,231 @@
+.home-section-conteiner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/Viajes_Hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+
+  .conteiner {
+    width: 100%;
+    padding-top: 12rem;
+
+    .title-conteiner {
+      display: flex;
+
+
+      .title {
+        padding-left: 14rem;
+
+        h1 {
+          color: #ffffff;
+          border-bottom: 2px #ffffff solid;
+          font-size: 4rem;
+          padding-right: 3rem;
+          padding-bottom: 1.6rem;
+          white-space: nowrap;
+        }
+
+        .iconLocate {
+          height: 55px;
+          width: 40;
+        }
+
+        h2 {
+          color: #ffffff;
+          font-size: 2.1rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          color: #ffffff;
+
+        }
+      }
+    }
+
+    .card-conteiner {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 4rem;
+
+      .card {
+        margin-right: 7rem;
+        color: #ffffff;
+        padding: 2rem;
+        border: 2px #cacaca dashed;
+        border-radius: 10px;
+        background-color: #2a303799;
+
+        h2 {
+          font-size: 1.2rem;
+          color: #fa6980;
+        }
+
+        p {
+          color: #cacaca;
+        }
+      }
+    }
+
+  }
+
+  .nav-slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+
+    .bar {
+      width: 13rem;
+      border: 4px #FA6980 solid;
+      height: 0;
+      z-index: 1;
+    }
+
+    .circle {
+      padding: .9rem;
+      background-color: #ffffff;
+      border: 1px #ffffff solid;
+      border-radius: 100%;
+      outline: 12px #cacaca94 solid;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .home-section-conteiner {
+    .conteiner {
+      .title-conteiner {
+        .title {
+          padding-left: 5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home-section-conteiner {
+    .conteiner {
+      padding-top: 0;
+
+      .title-conteiner {
+        justify-content: center;
+        .title {
+          padding-left: 0;
+        }
+      }
+
+      .card-conteiner {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .home-section-conteiner {
+    .conteiner {
+      padding-top: 0;
+      .title-conteiner {
+        display: flex;
+
+        .title {
+
+          padding-left: 0;
+
+          h1 {
+            color: #ffffff;
+            border-bottom: 2px #ffffff solid;
+            font-size: 2rem;
+            padding-bottom: 1.6rem;
+            white-space: nowrap;
+
+          }
+
+          .iconLocate {
+            height: 28px;
+            width: 12;
+          }
+
+          h2 {
+            color: #ffffff;
+            font-size: 1rem;
+          }
+
+          p {
+            font-size: 1rem;
+            color: #ffffff;
+            display: none;
+          }
+        }
+      }
+
+      .card-conteiner {
+        display: none;
+      }
+    }
+    .nav-slider {
+      .bar {
+        width: 5rem;
+        border: 4px #FA6980 solid;
+        height: 0;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home-section-conteiner {
+
+    .conteiner {
+      width: 100%;
+      .title-conteiner {
+        display: flex;
+        padding: 10px;
+        .title {
+
+          padding: 0 20px;
+
+          h1 {
+            color: #ffffff;
+            border-bottom: 2px #ffffff solid;
+            font-size: 1.6rem;
+            padding-bottom: 1.6rem;
+            white-space: nowrap;
+          }
+
+          .iconLocate {
+            height: 24px;
+            width: 15;
+          }
+
+          h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+          }
+
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .nav-slider {
+      .bar {
+        width: 5rem;
+        border: 4px #FA6980 solid;
+        height: 0;
+        z-index: 1;
+      }
+    }
+  }
+}

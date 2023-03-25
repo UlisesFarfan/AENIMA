@@ -1,0 +1,67 @@
+.card-trend-conteiner {
+  border-radius: 7px;
+  box-shadow: 0px 3px 6px #00000029;
+  min-width: 352px;
+  max-width: 352px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+
+  img {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .info-card {
+    padding: 1.2rem 2rem 2rem;
+    position: relative;
+
+    .new {
+      background-color: #FA6980;
+      color: #ffffff;
+      position: absolute;
+      top: -16px;
+      padding: 7px;
+      border-radius: 8px;
+      display: flex;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 17px;
+    }
+
+    p {
+      color: #7A838D;
+      font-size: 13px;
+
+      b {
+        color: #545b62;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hidde{
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card-trend-conteiner {
+    border-radius: 7px;
+    box-shadow: 0px 3px 6px #00000029;
+    min-width: 286px;
+    max-width: 286px;
+    img {
+      border-top-right-radius: 7px;
+      border-top-left-radius: 7px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+    }
+  }
+}
