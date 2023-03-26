@@ -13,14 +13,14 @@ export default function Home() {
       </Head>
       <div className='app-container'>
         <NavBar />
-        <section className="home-section">
+        <section id="home-section">
           <HomeSection />
         </section>
         <div className="info-section">
-          <section className="trend-section">
+          <section id="trend-section">
             <TrendSection />
           </section>
-          <section className="blog-section">
+          <section id="blog-section">
             <BlogSection />
           </section>
         </div>

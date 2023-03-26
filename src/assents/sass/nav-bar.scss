@@ -20,6 +20,15 @@
       align-items: center;
       gap: 31px;
       list-style-type: none;
+
+      a {
+        color: #cbd0d3;
+        text-decoration: none;
+      }
+
+      .active {
+        color: #2a3037;
+      }
     }
 
     .logo {
@@ -63,10 +72,11 @@
       z-index: 5;
       right: 0;
       width: 100vw;
-      display: flex; 
+      display: flex;
       justify-content: flex-end;
       background-color: #27272780;
       animation: mymove .3s;
+
       .menu {
         display: flex;
         flex-direction: column;
@@ -95,6 +105,15 @@
           li {
             padding-left: 37px;
           }
+
+          a {
+            color: #cbd0d3;
+            text-decoration: none;
+          }
+
+          .active {
+            color: #2a3037;
+          }
         }
       }
     }
@@ -106,13 +125,19 @@
     .deskop {
       display: none;
     }
-    .mobile{
+
+    .mobile {
       display: flex;
     }
   }
 }
 
 @keyframes mymove {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

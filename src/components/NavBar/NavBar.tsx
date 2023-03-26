@@ -1,11 +1,11 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 import Logos from "../Logos/Logos"
 import Icons from "../Icons/Icons"
+import * as Scroll from 'react-scroll';
 
 export default function NavBar() {
-
+  let Link = Scroll.Link;
   const [menuIsOpen, setMenuIsOpen] = useState(false)
-
   return (
     <nav className="nav-bar-conteiner">
       <div className="deskop">
@@ -13,14 +13,20 @@ export default function NavBar() {
           <Logos name="viajes_nav_bar" />
         </div>
         <ul className="nav">
-          <li>
-            HOME
+          <li >
+            <Link activeClass="active" spy to="home-section">
+              HOME
+            </Link >
           </li>
-          <li>
-            TENDENCIAS
+          <li >
+            <Link activeClass="active" spy to="trend-section">
+              TENDENCIAS
+            </Link >
           </li>
-          <li>
-            BLOG
+          <li >
+            <Link activeClass="active" spy to="blog-section">
+              BLOG
+            </Link>
           </li>
         </ul>
       </div>
@@ -39,14 +45,20 @@ export default function NavBar() {
                   <Icons name="no" />
                 </button>
                 <ul className="nav">
-                  <li>
-                    HOME
+                  <li >
+                    <Link activeClass="active" spy to="home-section">
+                      HOME
+                    </Link >
                   </li>
-                  <li>
-                    TENDENCIAS
+                  <li >
+                    <Link activeClass="active" spy to="trend-section">
+                      TENDENCIAS
+                    </Link >
                   </li>
-                  <li>
-                    BLOG
+                  <li >
+                    <Link activeClass="active" spy to="blog-section">
+                      BLOG
+                    </Link>
                   </li>
                 </ul>
               </div>
